@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="topnav">
+            <li class="brand"><img src="logo.png" alt="">SmithKart</li>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <input type="text" placeholder="Search item">
+            <!-- <input type="button" onclick="" value="Search"> -->
+            <button class="w3-btn w3-round-xlarge">search</button>
+            <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
+            <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
+            <!-- <button class="w3-btn w3-round-xlarge"onclick="">Login</button> -->
+        </div>
+    </nav>
+
+
+
+    <h1 style="text-align: center;">Your Cart</h1>
+
+    <div class="total" style="display: flex; justify-content: center; margin: 25px;">
+        <span class="list">Total Number of Item in Your cart is</span>
+        <!-- <span class="value">0</span> -->
+        <input type="number" id="tnumber" value="0" style="text-align: center; margin-left: 10px;" readonly >
+    </div>
+    <h1 id="table" style="display: flex; justify-content: center;margin: 25px;">
+    </h1>
+    <div class="card">
+        <div class="card-body" style="display: flex; justify-content: center; border: 2px">
+            <button type="button" onclick="buy()" class="btn btn-warning btn-block btn-lg" style="background-color: red;margin-top: 110px;height: 35px;width: 25%;">Proceed to
+                Pay</button>
+        </div>
+    </div>
+
+
+    <footer style="position: absolute;">
+        <div class="footer_div">
+            <section claa="footer_link">
+                <!-- Google -->
+                <a href="https://www.google.com/">
+                    <img src="icons8-google-48.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+                </a>
+                <!-- Instagram -->
+                <a href="#">
+                    <img src="icons8-instagram-48.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+                </a>
+                <!-- Linkedin -->
+                <a href="http://www.linkedin.com/in/shivam-gupta-162075260">
+                    <img src="icons8-linkedin-circled.gif" alt="Google" width="3%" height="3%" style="margin: 3px;">
+                </a>
+                <!-- Github -->
+                <a href="https://github.com/Shivam20214082/MNNIT-CSE-Code">
+                    <img src="icons8-github-50.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+                </a>
+            </section>
+        </div>
+        <div class="Copyright">© 2023 Copyright:
+            <a class="text-white" href="#">SmithKart.com</a>
+        </div>
+    </footer>
+    <script src="srcipt.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

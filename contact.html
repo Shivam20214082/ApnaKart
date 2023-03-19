@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="topnav">
+            <li class="brand"><img src="logo.png" alt="">SmithKart</li>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <input type="text" placeholder="Search item">
+            <!-- <input type="button" onclick="" value="Search"> -->
+            <button class="w3-btn w3-round-xlarge">search</button>
+            <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
+            <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
+            <!-- <button class="w3-btn w3-round-xlarge"onclick="">Login</button> -->
+        </div>
+    </nav>
+    <div class="main">
+        <div class="left">
+            <h1 class="heading">Contact Us</h1>
+            <p>Feel like Contacting us?<br>Submit Your Queries here and we will get back to u as sonn as possible</p>
+        </div>
+        <div class="Right">
+            <form action="" class="contact">
+                <h1>Send us a Message</h1>
+                <label for="name">Name:</label><br>
+                <input type="text" class="name" style="width:100%";><br>
+                <label for="name">Phone Number:</label><br>
+                <input type="number" class="number" style="width:100%";><br>
+                <label for="email">Email:</label><br>
+                <input type="email" class="email" style="width:100%";><br>
+                <span>Preffered mode of Communication</span><br>
+                <input type="checkbox" class="emailc";>
+                <label for="email">Email</label>
+                <input type="checkbox" class="phonec" ;>
+                <label for="email">Phone</label><br>
+                <label for="message">Message:</label><br>
+                <textarea type="text" class="message" style="width:100% ;height: 45px;word-wrap: normal;"></textarea><br>
+                <button type="button" class=" submit btn btn-outline-primary">Submit</button>
+
+            </form>
+        </div>
+    </div>
+    <footer style="position: absolute;">
+        <div class="footer_div">
+            <section claa="footer_link">
+                <!-- Google -->
+                <a href="https://www.google.com/">
+                    <img src="icons8-google-48.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+                </a>
+                <!-- Instagram -->
+                <a href="#">
+                    <img src="icons8-instagram-48.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+                </a>
+                <!-- Linkedin -->
+                <a href="http://www.linkedin.com/in/shivam-gupta-162075260">
+                    <img src="icons8-linkedin-circled.gif" alt="Google"width="3%" height="3%" style="margin: 3px;">
+                </a>
+                <!-- Github -->
+                <a href="https://github.com/Shivam20214082/MNNIT-CSE-Code">
+                    <img src="icons8-github-50.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+                </a>
+            </section>
+        </div>
+        <div class="Copyright">© 2023 Copyright:
+            <a class="text-white" href="#">SmithKart.com</a>
+        </div>
+    </footer>
+    <script src="srcipt.js"></script>
+</body>
+</html>

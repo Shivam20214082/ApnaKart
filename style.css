@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+body {
+  background-color: antiquewhite;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  /* position: fixed; Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav div{
+    display:  flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: cyan;
+    color: bisque;
+}
+nav div li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 54px;
+    padding: 0 8px;
+}
+.brand{
+    color: rgb(34, 0, 255);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+a:link {
+    /* color: black; */
+    text-decoration: none;
+}
+  
+  /* visited link */
+a:visited {
+    color: rgb(188, 146, 91);
+    text-decoration: none;
+}
+  
+  /* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}
+  
+  /* selected link */
+a:active {
+    color: blue;
+    text-decoration: none;
+}
+
+/* search bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: 12px;
+    width: 30%;
+    font-size: 17px;
+}
+.topnav input[type=button] {
+    background-color: goldenrod;
+    color: chartreuse;
+    
+    float: right;
+    width: 15%;
+    padding: 6px;
+    border: 1px;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-left: 12px;
+    /* width: 60%; */
+    font-size: 17px;
+}
+.cart img{
+    width: 54px;
+    padding: 0 8px;
+}
+.cart{
+    color: rgb(34, 0, 255);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+/* .body{
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+} */
+tools.img {
+    margin-left: 10px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    display: block;
+}
+  div.tools {
+    margin-top: 65px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  div.materials {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* img {width: 100%} */
+  
+  div.toolstext {
+    text-align: center;
+    padding: 10px 20px;
+  }
+footer {
+  background-color: #3f3e3e;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px 0 10px;
+}
+.Copyright{
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 20px;
+}
+footer_link.img{
+  margin: 4px;
+  display: block;
+}
