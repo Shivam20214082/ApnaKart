@@ -2,63 +2,173 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmithKart</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApnaKart</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <div class="topnav">
-            <li class="brand"><img src="logo.png" alt="">SmithKart</li>
-            <li> <a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <input type="text" placeholder="Search item">
-            <!-- <input type="button" onclick="" value="Search"> -->
-            <button class="w3-btn w3-round-xlarge">search</button>
-            <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
-            <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
-            <!-- <button class="w3-btn w3-round-xlarge"onclick="">Login</button> -->
-        </div>
-    </nav>
-    <div class="tools">
-        <img src="tools.jpg" width: 80%;
-        height: 20%;>
-        <div class="toolstext">Tools</div>
+  <nav>
+    <div class="topnav">
+      <li class="brand"><img src="logo.png" alt="">ApnaKart</li>
+      <li> <a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <input type="text" placeholder="Search item">
+      <button class="w3-btn w3-round-xlarge "style="cursor: pointer;">search</button>
+      <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
+      <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
     </div>
-    <div class="tools" width: 80%;
-    height: 20%;>
-        <img src="materials.jpg">
+  </nav>
+
+
+
+  <div class="section top-products">
+    <h2>Top Products</h2>
+    <div class="product-container">
+      <div class="product">
+        <img src="images/daal.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Daal">
+        <div class="product-info">
+          <h3>Daal</h3>
+          <p class="price">Rs 100/kg</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/rice.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 2">
+        <div class="product-info">
+          <h3>Rice</h3>
+          <p class="price">Rs 40/kg</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/milk.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 3">
+        <div class="product-info">
+          <h3>Milk</h3>
+          <p class="price">Rs 40/litre</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/sugar.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 4">
+        <div class="product-info">
+          <h3>Sugar</h3>
+          <p class="price">Rs 40/kg</p>
+        </div>
+      </div>
     </div>
-    <footer>
-        <div class="footer_div">
-            <section claa="footer_link">
-                <!-- Google -->
-                <a href="https://www.google.com/">
-                    <img src="icons8-google-48.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
-                </a>
-                <!-- Instagram -->
-                <a href="#">
-                    <img src="icons8-instagram-48.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
-                </a>
-                <!-- Linkedin -->
-                <a href="http://www.linkedin.com/in/shivam-gupta-162075260">
-                    <img src="icons8-linkedin-circled.gif" alt="Google"width="3%" height="3%" style="margin: 3px;">
-                </a>
-                <!-- Github -->
-                <a href="https://github.com/Shivam20214082/MNNIT-CSE-Code">
-                    <img src="icons8-github-50.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
-                </a>
-            </section>
+    <div class="button">
+      <button class="left-button">&#8249;</button>
+      <button class="right-button">&#8250;</button>
+    </div>
+    <button class="see-more" onclick="goToNextPage()">See more</button>
+  </div>
+
+  <div class="section organic-products">
+    <h2>Daily Products</h2>
+    <div class="product-container">
+      <div class="product">
+        <img src="images/oil.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 5">
+        <div class="product-info">
+          <h3>Oil</h3>
+          <p class="price">Rs 100-500/litre</p>
         </div>
-        <div class="Copyright">© 2023 Copyright:
-            <a class="text-white" href="#">SmithKart.com</a>
+      </div>
+      <div class="product">
+        <img src="images/soap.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 6">
+        <div class="product-info">
+          <h3>Soap</h3>
+          <p class="price">Rs 10-150</p>
         </div>
-    </footer>
-    <script src="srcipt.js"></script>
+      </div>
+      <div class="product">
+        <img src="images/aata.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 7">
+        <div class="product-info">
+          <h3>Wheat flour</h3>
+          <p class="price">Rs 30/kg</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/jaggery.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 8">
+        <div class="product-info">
+          <h3>Jaggery</h3>
+          <p class="price">Rs 60/kg</p>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <button class="left-button">&#8249;</button>
+      <button class="right-button">&#8250;</button>
+    </div>
+    <button class="see-more" onclick="goToNextPage()">See more</button>
+  </div>
+  <div class="section organic-products">
+    <h2> Dry Fruits</h2>
+    <div class="product-container">
+      <div class="product">
+        <img src="images/almonds.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 5">
+        <div class="product-info">
+          <h3>Almonds</h3>
+          <p class="price">Rs 1000/kg</p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="images/kaju.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 6">
+        <div class="product-info">
+          <h3>Cheshew</h3>
+          <p class="price">Rs 1000/kg</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/resins.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 7">
+        <div class="product-info">
+          <h3>Resins</h3>
+          <p class="price">Rs 300/kg</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="images/coconut.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 8">
+        <div class="product-info">
+          <h3>Coconut</h3>
+          <p class="price">Rs 300/kg</p>
+        </div>
+      </div>
+    </div>
+    <div class="button">
+      <button class="left-button">&#8249;</button>
+      <button class="right-button">&#8250;</button>
+    </div>
+    <button class="see-more" onclick="goToNextPage()">See more</button>
+  </div>
+
+<h1 style="text-align: center;">More Items Will be Added Soon!!!!!!!</h1>
+  <footer>
+    <div class="footer_div">
+      <section claa="footer_link">
+        <!-- Google -->
+        <a href="https://www.google.com/">
+          <img src="icons8-google-48.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+        </a>
+        <!-- Instagram -->
+        <a href="#">
+          <img src="icons8-instagram-48.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+        </a>
+        <!-- Linkedin -->
+        <a href="http://www.linkedin.com/in/shivam-gupta-162075260">
+          <img src="icons8-linkedin-circled.gif" alt="Google" width="3%" height="3%" style="margin: 3px;">
+        </a>
+        <!-- Github -->
+        <a href="https://github.com/Shivam20214082/MNNIT-CSE-Code">
+          <img src="icons8-github-50.png" alt="Google" width="3%" height="3%" style="margin: 3px;">
+        </a>
+      </section>
+    </div>
+    <div class="Copyright">© 2023 Copyright:
+      <a class="text-white" href="#">SmithKart.com</a>
+    </div>
+  </footer>
+  <script src="srcipt.js"></script>
 </body>
 
 </html>
