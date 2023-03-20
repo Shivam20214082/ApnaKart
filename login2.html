@@ -10,17 +10,20 @@
 
     <nav>
       <div class="topnav">
-          <li class="brand"><img src="logo.png" alt="">ApnaKart</li>
-          <li> <a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <input type="text" placeholder="Search item">
-          <button class="w3-btn w3-round-xlarge" style="cursor: pointer;">search</button>
-          <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
-          <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
+        <li class="brand"><img src="logo.png" alt="">ApnaKart</li>
+        <li> <a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search item" onkeyup="search()">
+          <div id="search-results" style="background-color: aliceblue;"></div>
+        </div>
+        <!-- <input type="text" id="search" placeholder="Search item" onkeyup="search()"> -->
+        <button class="w3-btn w3-round-xlarge "style="cursor: pointer;">search</button>
+        <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
+        <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
       </div>
-  </nav>
-
+    </nav>
     <div class="form-selector">
       <button id="register-btn" onclick="document.getElementById('register-form').style.display = 'block';  document.getElementById('login-form').style.display = 'none';">Register</button>
       <button id="login-btn" onclick="document.getElementById('login-form').style.display = 'block';  document.getElementById('register-form').style.display = 'none';">Login</button>
