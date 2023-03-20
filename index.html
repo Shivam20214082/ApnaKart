@@ -16,40 +16,46 @@
       <li> <a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <input type="text" placeholder="Search item">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search item" onkeyup="search()">
+        <div id="search-results" style="background-color: aliceblue;"></div>
+      </div>
+      <!-- <input type="text" id="search" placeholder="Search item" onkeyup="search()"> -->
       <button class="w3-btn w3-round-xlarge "style="cursor: pointer;">search</button>
       <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
       <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
     </div>
   </nav>
 
+  
+  
 
 
   <div class="section top-products">
     <h2>Top Products</h2>
     <div class="product-container">
-      <div class="product">
+      <div class="product" id="p1">
         <img src="images/daal.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Daal">
-        <div class="product-info">
+        <div class="product-info" >
           <h3>Daal</h3>
           <p class="price">Rs 100/kg</p>
         </div>
       </div>
-      <div class="product">
+      <div class="product" id="p2">
         <img src="images/rice.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 2">
-        <div class="product-info">
+        <div class="product-info" >
           <h3>Rice</h3>
           <p class="price">Rs 40/kg</p>
         </div>
       </div>
-      <div class="product">
+      <div class="product" id="p3">
         <img src="images/milk.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 3">
-        <div class="product-info">
+        <div class="product-info" >
           <h3>Milk</h3>
           <p class="price">Rs 40/litre</p>
         </div>
       </div>
-      <div class="product">
+      <div class="product" id="p4">
         <img src="images/sugar.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 4">
         <div class="product-info">
           <h3>Sugar</h3>
@@ -66,7 +72,7 @@
 
   <div class="section organic-products">
     <h2>Daily Products</h2>
-    <div class="product-container">
+    <div class="product-container" id="p5"> 
       <div class="product">
         <img src="images/oil.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 5">
         <div class="product-info">
@@ -74,21 +80,21 @@
           <p class="price">Rs 100-500/litre</p>
         </div>
       </div>
-      <div class="product">
+      <div class="product" id="p6">
         <img src="images/soap.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 6">
         <div class="product-info">
           <h3>Soap</h3>
           <p class="price">Rs 10-150</p>
         </div>
       </div>
-      <div class="product">
+      <div class="product" id="p7">
         <img src="images/aata.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 7">
         <div class="product-info">
           <h3>Wheat flour</h3>
           <p class="price">Rs 30/kg</p>
         </div>
       </div>
-      <div class="product">
+      <div class="product" id="p8">
         <img src="images/jaggery.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 8">
         <div class="product-info">
           <h3>Jaggery</h3>
@@ -105,7 +111,7 @@
   <div class="section organic-products">
     <h2> Dry Fruits</h2>
     <div class="product-container">
-      <div class="product">
+      <div class="product" id="p9">
         <img src="images/almonds.jpeg" onclick="window.location.href='404.html';" style="cursor: pointer;"  alt="Product 5">
         <div class="product-info">
           <h3>Almonds</h3>
@@ -113,21 +119,21 @@
         </div>
       </div>
 
-      <div class="product">
+      <div class="product" id="p10">
         <img src="images/kaju.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 6">
         <div class="product-info">
           <h3>Cheshew</h3>
           <p class="price">Rs 1000/kg</p>
         </div>
       </div>
-      <div class="product">
+      <div class="product" id="p11">
         <img src="images/resins.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 7">
         <div class="product-info">
           <h3>Resins</h3>
           <p class="price">Rs 300/kg</p>
         </div>
       </div>
-      <div class="product">
+      <div class="product" id="p12">
         <img src="images/coconut.jpeg"  onclick="window.location.href='404.html';" style="cursor: pointer;" alt="Product 8">
         <div class="product-info">
           <h3>Coconut</h3>

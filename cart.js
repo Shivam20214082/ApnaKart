@@ -15,6 +15,7 @@ function buy() {
         if (inputBox.value === "0") {
             alert("No Item in the Cart!!")
         } else {
+            window.location.href="payment.html"
             // parentDiv.textContent = "";
         }
 }

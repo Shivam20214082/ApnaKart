@@ -17,7 +17,7 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
             <input type="text" placeholder="Search item">
-            <button class="w3-btn w3-round-xlarge">search</button>
+            <button class="w3-btn w3-round-xlarge" style="cursor: pointer;">search</button>
             <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
             <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
         </div>
@@ -30,13 +30,13 @@
     <div class="total" style="display: flex; justify-content: center; margin: 25px;">
         <span class="list">Total Number of Item in Your cart is</span>
         <!-- <span class="value">0</span> -->
-        <input type="number" id="tnumber" value="0" style="text-align: center; margin-left: 10px;" readonly >
+        <input type="number" id="tnumber" value="1" style="text-align: center; margin-left: 10px;" readonly >
     </div>
     <h1 id="table" style="display: flex; justify-content: center;margin: 25px;">
     </h1>
     <div class="card">
         <div class="card-body" style="display: flex; justify-content: center; border: 2px">
-            <button type="button" onclick="buy()" class="btn btn-warning btn-block btn-lg" style="background-color: red;margin-top: 110px;height: 35px;width: 25%;">Proceed to
+            <button type="button" onclick="buy()" class="btn btn-warning btn-block btn-lg" style="background-color: red;margin-top: 110px;height: 35px;width: 25%; cursor: pointer;">Proceed to
                 Pay</button>
         </div>
     </div>

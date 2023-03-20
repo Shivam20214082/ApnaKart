@@ -16,6 +16,11 @@ nav{
     font-family: 'Varela Round', sans-serif;
 }
 
+nav div div div{
+  background-color: #eff0ea;
+  color: #ec1111;
+}
+
 nav div{
     display:  flex;
     align-items: center;
@@ -73,7 +78,7 @@ a:active {
     margin-top: 8px;
     margin-right: 8px;
     margin-left: 12px;
-    width: 30%;
+    width: 100%;
     font-size: 17px;
 }
 .topnav input[type=button] {
@@ -221,4 +226,21 @@ footer {
 footer_link.img{
   margin: 4px;
   display: block;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+}
+
+#search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  /* background-color: rgb(197, 69, 69); */
+  border: 1px solid #202020;
+  text-align: center;
+  z-index: 1;
+  display: none;
 }

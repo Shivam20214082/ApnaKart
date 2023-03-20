@@ -15,7 +15,7 @@
           <li><a href="about.html">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
           <input type="text" placeholder="Search item">
-          <button class="w3-btn w3-round-xlarge">search</button>
+          <button class="w3-btn w3-round-xlarge" style="cursor: pointer;">search</button>
           <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
           <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
       </div>
@@ -36,12 +36,12 @@
         <input type="text" id="username" name="username" required>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email1" name="email" required>
 
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password1" name="password" required>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" onclick="submitForm()">
       </form>
     </div>
 
@@ -49,12 +49,12 @@
         <form>
         <h2>Login Form</h2>
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email2" name="email" required>
 
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password2" name="password" required>
 
-        <input type="submit" value="Submit" >
+        <input type="submit" value="Submit" onclick="submitForm()">
       </form>
     </div>
 
@@ -84,5 +84,6 @@
       </div>
   </footer>
   <script src="srcipt.js"></script>
+  <script src="login.js"></script>
   </body>
 </html>
