@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const parentDiv = document.getElementById("table");
     const inputBox = document.getElementById("tnumber");
-
         if (inputBox.value === "0") {
             parentDiv.textContent = "No items in cart";
         } else {
@@ -19,3 +18,5 @@ function buy() {
             // parentDiv.textContent = "";
         }
 }
+
+

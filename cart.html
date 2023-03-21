@@ -7,25 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 
 <body>
     <nav>
         <div class="topnav">
-          <li class="brand"><img src="logo.png" alt="">ApnaKart</li>
-          <li> <a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search item" onkeyup="search()">
-            <div id="search-results" style="background-color: aliceblue;"></div>
-          </div>
-          <!-- <input type="text" id="search" placeholder="Search item" onkeyup="search()"> -->
-          <button class="w3-btn w3-round-xlarge "style="cursor: pointer;">search</button>
-          <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
-          <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
+            <li class="brand"><img src="logo.png" alt="">ApnaKart</li>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search item" onkeyup="search()">
+                <div id="search-results" style="background-color: aliceblue;"></div>
+            </div>
+            <!-- <input type="text" id="search" placeholder="Search item" onkeyup="search()"> -->
+            <button class="w3-btn w3-round-xlarge " style="cursor: pointer;">search</button>
+            <li class="cart"><img src="cart.png"><a href="cart.html">Cart</a></li>
+            <input class="login" onmouseover="" onclick="redirectToNewPage()" type="button" value="Login">
         </div>
-      </nav>
+    </nav>
 
 
 
@@ -34,13 +35,16 @@
     <div class="total" style="display: flex; justify-content: center; margin: 25px;">
         <span class="list">Total Number of Item in Your cart is</span>
         <!-- <span class="value">0</span> -->
-        <input type="number" id="tnumber" value="1" style="text-align: center; margin-left: 10px;" readonly >
+        <input type="number" id="tnumber" value="0" style="text-align: center; margin-left: 10px;" readonly>
     </div>
     <h1 id="table" style="display: flex; justify-content: center;margin: 25px;">
     </h1>
+
+    <div id="product" style="display: flex; flex-direction: coloumn; justify-content: center;font-size: 25px;"></div>
     <div class="card">
         <div class="card-body" style="display: flex; justify-content: center; border: 2px">
-            <button type="button" onclick="buy()" class="btn btn-warning btn-block btn-lg" style="background-color: red;margin-top: 110px;height: 35px;width: 25%; cursor: pointer;">Proceed to
+            <button type="button" onclick="buy()" class="btn btn-warning btn-block btn-lg"
+                style="background-color: red;margin-top: 110px;height: 35px;width: 25%; cursor: pointer;">Proceed to
                 Pay</button>
         </div>
     </div>
@@ -71,6 +75,65 @@
             <a class="text-white" href="#">SmithKart.com</a>
         </div>
     </footer>
+
+
+
+    <script>
+        // Get the cart items from localStorage, or create an empty array if it doesn't exist yet
+        var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+        var totalItems = 0;
+        for (var i = 0; i < cartItems.length; i++) {
+            totalItems ++;
+        }
+        var currentTotal = parseInt(document.getElementById("tnumber").value);
+        document.getElementById("tnumber").value = totalItems;
+
+        // Display the cart items
+        for (var i = 0; i < cartItems.length; i++) {
+            var item = cartItems[i];
+            var html = `
+        <div class="cart-item">
+            <img src="${item.image}" alt="${item.name}">
+            <div>
+                <h3>${item.name}</h3>
+                <p>${item.price} Rs x <span class="quantity-value">${item.quantity}</span> = <span class="total">${item.price * item.quantity} Rs</span></p>
+                <button id="delete-button-${i}" class="delete-btn">Delete</button>
+            </div>
+            <div class="quantity">
+                <button class="decrease-btn">-</button>
+                <input type="number" class="quantity-input" value="${item.quantity}">
+                <button class="increase-btn">+</button>
+            </div>
+        </div>
+    `;
+            var div = document.createElement("div");
+            div.innerHTML = html;
+            document.getElementById("product").appendChild(div);
+
+            // Create delete button for each item
+            var deleteBtn = document.getElementById(`delete-button-${i}`);
+            deleteBtn.onclick = (function (itemIndex) {
+                return function () {
+                    // Remove item from cartItems array
+                    cartItems.splice(itemIndex, 1);
+                    // Save updated cartItems to localStorage
+                    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+                    // Remove item div from the DOM
+                    div.remove();
+                    // Update the total number of items
+                    var currentTotal = parseInt(document.getElementById("tnumber").value);
+                    document.getElementById("tnumber").value = currentTotal - 1;
+                    window.location.href="cart.html"
+                };
+            })(i);
+
+            // div.appendChild(deleteBtn);
+            document.getElementById("product").appendChild(div);
+        }
+
+    </script>
+
     <script src="srcipt.js"></script>
     <script src="cart.js"></script>
 </body>
