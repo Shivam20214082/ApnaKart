@@ -10,12 +10,16 @@ body {
 }
 
 .row{
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .abc {
-    padding-left: 40px
+    padding-top: 60px;
+    width: 35%;
+    display: flex;
+    font-weight: 300;
+    font-size: 52px;
+    
 }
 
 .pqr {
@@ -32,13 +36,18 @@ li {
 }
 
 .col-md-2 {
-    padding-bottom: 20px;
-    font-weight: bold
+    display: inline block;
+    background-color: #7DC855;
+    border-radius: 6px;
+    padding-bottom: 12px 30px;
+    border-bottom: 1px solid #E1E8EE
+    
 }
 
 .col-md-2 a {
     text-decoration: none;
-    color: #000
+    color: #FFFFFF;
+    font-size: 16px
 }
 
 .col-md-2.mio {
@@ -53,7 +62,7 @@ li {
     border-radius: 20px;
     height: 6px;
     width: 55%;
-    background: yellow;
+    background: green;
     margin: 14px 0
 }
 
@@ -106,6 +115,6 @@ li {
         display: flex;
         text-align: center;
         margin: 0 auto;
-        margin-right: 40px
+        margin-right: 40px;
     }
 }
